@@ -75,7 +75,7 @@ function handleDocxtemplaterError(docxtemplaterError) {
     return handleError(new Error(msg));
   }
   // Handle any other errors normally.
-  return handleError(renderError);
+  return handleError(docxtemplaterError);
 }
 
 async function gristGetAttachmentURL(attachmentId) {
